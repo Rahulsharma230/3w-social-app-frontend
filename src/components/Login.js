@@ -64,8 +64,16 @@ function Login({ onLoginSuccess, onSwitchToSignup }) {
                     </button>
                 </form>
 
-                <div className="auth-link">
+                {/* <div className="auth-link">
                     Don't have an account? <a onClick={onSwitchToSignup}>Sign up here</a>
+                </div> */}
+
+
+                <div className="auth-link">
+                    Don't have an account?{' '}
+                    <button type="button" className="link-button" onClick={onSwitchToSignup}>
+                        Sign up here
+                    </button>
                 </div>
             </div>
         </div>
