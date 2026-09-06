@@ -570,6 +570,25 @@ body {
     color: var(--primary-dark);
 }
 
+
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
+}
+
 /* ============ MESSAGES ============ */
 .error-message {
     color: #d32f2f;
