@@ -5,7 +5,7 @@ import axios from 'axios';
  * Base URL: http://localhost:8080/api
  * withCredentials: true enables sending cookies with requests (for JWT token)
  */
-const API_URL = 'http://localhost:8080/api';
+const API_URL = 'https://threew-social-app-backend.onrender.com/api';
 
 const api = axios.create({
     baseURL: API_URL,
