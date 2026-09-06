@@ -21,7 +21,7 @@ function Signup({ onSignupSuccess, onSwitchToLogin }) {
         setLoading(true);
 
         try {
-            const response = await signup(username, email, password);
+            await signup(username, email, password);
             setError('');
             alert('Signup successful! Please login now.');
             onSwitchToLogin();
@@ -96,9 +96,13 @@ function Signup({ onSignupSuccess, onSwitchToLogin }) {
                     </button>
                 </form>
 
-                <div className="auth-link">
+                {/* <div className="auth-link">
                     Already have an account? <a onClick={onSwitchToLogin}>Login here</a>
-                </div>
+                </div> */}
+
+                <button type="button" className="link-button" onClick={onSwitchToLogin}>
+                    Login here
+                </button>
             </div>
         </div>
     );
